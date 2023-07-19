@@ -15,12 +15,8 @@ app.post('/chat', async(req, res) => {
     // console.log(content);
     const configuration = new Configuration({
     // apiKey: process.env.OPENAI_API_KEY,
-<<<<<<< HEAD
-    apiKey: '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',
-=======
     apiKey: '',
->>>>>>> c068710956e202c72ce7dbd80cd5d4d279c5aeae
-    });
+
     const openai = new OpenAIApi(configuration);
 
     const chatCompletion = await openai.createChatCompletion({
