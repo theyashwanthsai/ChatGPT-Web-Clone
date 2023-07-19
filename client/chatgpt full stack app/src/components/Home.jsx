@@ -33,17 +33,24 @@ function Home() {
     
 
     return (
-        <div className="">
-            <div className="border-2 border-black w-4/12 p-5 m-auto mt-8">
+        <div className="m-auto ">
+            <div className="border-2 border-black w-1/2 m-auto p-2 flex rounded-2xl">
+                <div className="m-auto p-2">
                 <input type="text" name="" id="" placeholder="Enter Prompt" onChange={
                     (e) => {
                         setPrompt(e.target.value);
                     }
-                } className="border-2 border-black p-4 mr-2"/>
-                <button onClick={getChat}  className = "border-2 border-black p-4 ml-2">Click to get answer</button>
+                } className="border-2 border-black p-2 rounded-2xl"/>
+
+
+                <button onClick={getChat}  className = "border-2 border-black p-2 rounded-2xl">Click</button>
+
+            
+                </div>
             </div>
-            <div className="border-2 border-black w-4/12 p-5 m-auto mt-8">
-            <p>Answer:  {ans}</p>
+            <br />
+            <div className="border-2 border-black w-1/2 m-auto p-2 rounded-2xl">
+            <p className="p-2">Answer:  {ans}</p>
             </div>
                 
         </div>
